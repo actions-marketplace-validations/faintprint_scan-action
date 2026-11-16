@@ -65,7 +65,7 @@
 
 set -eu
 
-STEP_VERSION=1.6.0
+STEP_VERSION=1.6.1
 SARIF_NAME=faintprint.sarif
 INDEX=gitlab.com/api/v4/projects/faintprint%2Ffaintprint/packages/pypi/simple
 

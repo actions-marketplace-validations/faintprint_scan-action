@@ -1,12 +1,24 @@
 # Faintprint scan for GitHub Actions
 
-Runs [Faintprint](#about-faintprint) in a GitHub workflow. It installs
-Faintprint with your deploy token, scans the MCP servers you name, keeps
-the reports as an artefact, and passes or fails the job by the result.
+**This step needs a Faintprint subscription:**
+[faintprint.com/price/](https://faintprint.com/price/). Without one it
+stops at the install.
 
-This repository holds only the wrapper. Faintprint itself is distributed
-privately: you need the deploy token (a name and a secret) that came with
-your licence.
+Faintprint reads the tool lists of the MCP servers you name and rates each
+server twice: **signs of an attack** (is it trying to trick your AI?) and
+**what it can do** (files, shell, network, secrets). Every finding quotes
+the server's own sentence. It never starts a server and never calls a
+tool, and a scan sends nothing to us.
+
+This step installs Faintprint with your deploy token, scans what you name,
+keeps the reports as an artefact, and passes or fails the job by the
+result. With `upload-sarif: true` the findings also appear in the Security
+tab; on a private repository that needs GitHub Code Security.
+
+This repository holds only the wrapper, under the MIT licence. Faintprint
+itself is distributed privately: your subscription comes with two deploy
+tokens (a name and a secret each), one for people and one for pipelines.
+Use the pipeline one here.
 
 ## Use
 
@@ -34,7 +46,7 @@ jobs:
 ```
 
 For a build check that changes only when you decide, pin the step to a
-commit instead of `v1`: `faintprint/scan-action@<full commit> # v1.6.0`.
+commit instead of `v1`: `faintprint/scan-action@<full commit> # v1.6.1`.
 Dependabot can propose new pins.
 
 ## Inputs
@@ -181,6 +193,10 @@ like. The step itself is unchanged.
 
 `v1.6.0` installs Faintprint 0.8.0 by default, which carries a licence
 notice and names two apps by their current names. The step itself is unchanged.
+
+`v1.6.1` changes text only: this README now says first that a Faintprint
+subscription is needed. The step does exactly what `v1.6.0` did, and
+installs Faintprint 0.8.0 by default.
 
 ## About Faintprint
 
