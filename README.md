@@ -34,7 +34,7 @@ jobs:
 ```
 
 For a build check that changes only when you decide, pin the step to a
-commit instead of `v1`: `faintprint/scan-action@<full commit> # v1.5.0`.
+commit instead of `v1`: `faintprint/scan-action@<full commit> # v1.6.0`.
 Dependabot can propose new pins.
 
 ## Inputs
@@ -179,6 +179,9 @@ files of eleven more apps when `scan` names one: `.zed/settings.json`,
 `opencode.json`, `.gemini/settings.json`, `.kiro/settings/mcp.json` and the
 like. The step itself is unchanged.
 
+`v1.6.0` installs Faintprint 0.8.0 by default, which carries a licence
+notice and names two apps by their current names. The step itself is unchanged.
+
 ## About Faintprint
 
 Faintprint scans the tool lists of Model Context Protocol servers for
@@ -188,4 +191,4 @@ encoded text, look-alike names, and what each server can do.
 ## Licence
 
 The wrapper in this repository is under the MIT licence (`LICENSE`).
-Faintprint itself is not; its terms come with your licence.
+Faintprint itself is not; its terms are at https://faintprint.com/terms/.

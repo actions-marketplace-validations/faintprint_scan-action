@@ -44,7 +44,7 @@ inputs:
   version:
     description: "The Faintprint version to install."
     required: false
-    default: "0.7.0"
+    default: "0.8.0"
   reports:
     description: "The report folder, and the name of the artefact it is kept as."
     required: false

@@ -58,10 +58,14 @@
 # also reads the config files of eleven more apps (Zed, opencode, Gemini CLI,
 # Kiro and others) when one is named in the scan input; the step itself is
 # unchanged.
+#
+# 1.6.0 (Faintprint 0.8.0) changes only the default version. Faintprint 0.8.0
+# carries a licence notice and labels two apps by their current names; the
+# step itself is unchanged.
 
 set -eu
 
-STEP_VERSION=1.5.0
+STEP_VERSION=1.6.0
 SARIF_NAME=faintprint.sarif
 INDEX=gitlab.com/api/v4/projects/faintprint%2Ffaintprint/packages/pypi/simple
 
