@@ -9,6 +9,7 @@
 # with review on, checks the Anthropic key before anything is installed;
 # 1.4.0 makes Faintprint 0.6.0 the default; 1.5.0 makes Faintprint 0.7.0 the
 # default; 1.6.0 makes Faintprint 0.8.0 the default. 1.6.1 changes text only.
+# So does 1.6.2.
 
 name: Faintprint scan
 description: Scan MCP servers for signs of an attack and fail the job by the result. Needs a Faintprint subscription.
