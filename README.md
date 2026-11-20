@@ -1,7 +1,7 @@
 # Faintprint scan for GitHub Actions
 
 **This step needs a Faintprint subscription:**
-[faintprint.com/price/](https://faintprint.com/price/). Without one it
+[faintprint.com/price/](https://faintprint.com/price/?from=github#plans). Without one it
 stops at the install.
 
 Faintprint reads the tool lists of the MCP servers you name and rates each
@@ -197,6 +197,11 @@ notice and names two apps by their current names. The step itself is unchanged.
 `v1.6.1` changes text only: this README now says first that a Faintprint
 subscription is needed. The step does exactly what `v1.6.0` did, and
 installs Faintprint 0.8.0 by default.
+
+`v1.6.2` changes text only: the price link above now carries one word
+saying where you came from (`?from=github`), so we can count the buyers
+each listing brings. The step does exactly what `v1.6.1` did, and installs
+Faintprint 0.8.0 by default.
 
 ## About Faintprint
 
